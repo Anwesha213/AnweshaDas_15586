@@ -63,3 +63,26 @@ select * from authors;
 INSERT INTO public.orderitem(
 	itemid, pid, pname, quantity, unitprice, itemTotalPrice)
 	VALUES (5, 3, 'Tops', 2, 300, 600);
+
+
+ create table public.order 
+ (
+ orderId integer Primary Key,
+ custId integer REFERENCES public.customer(custId),
+ itemId integer REFERENCES public.orderItem(itemId),
+ orderDate varchar(30),
+ totalOrderPrice integer
+);
+
+SELECT pname, unitPrice*quantity  AS itemTotalPrice
+FROM orderItem;
+
+SELECT p.pname,
+ oi.unitPrice*oi.quantity  AS itemTotalPrice
+FROM orderItem oi
+JOIN product p ON p.pid=oi.pid;
+
+UPDATE orderItem SET itemTotalPrice=quantity*unitPrice
+
+insert into order values(1,1,'T-shirts',2,9999,22);
+insert into order values(3,2,'Dresses',2,100000,20000);
