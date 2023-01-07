@@ -1,38 +1,101 @@
 package com.ecommerce.dto;
 
+ 
+
+import java.util.Objects;
+
+ 
+
 public class CustomerData {
 
-	private Long customerId;
-	private String customerName;
-	private String phone;
-	private String email;
-	public CustomerData() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public Long getCustomerId() {
-		return customerId;
-	}
-	public void setCustomerId(Long customerId) {
-		this.customerId = customerId;
-	}
-	public String getCustomerName() {
-		return customerName;
-	}
-	public void setCustomerName(String customerName) {
-		this.customerName = customerName;
-	}
-	public String getPhone() {
-		return phone;
-	}
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	
+private int custId;
+
+private String custName;
+
+private Long phone;
+
+private String email;
+
+private String permanentAddress;
+
+public CustomerData() {
+
+super();
+
+// TODO Auto-generated constructor stub
+
 }
+
+public int getCustId() {
+
+return custId;
+
+}
+
+public void setCustId(int custId) {
+
+this.custId = custId;
+
+}
+
+public String getCustName() {
+
+return custName;
+
+}
+
+public void setCustName(String custName) {
+
+this.custName = custName;
+
+}
+
+public Long getPhone() {
+
+return phone;
+
+}
+
+public void setPhone(Long phone) {
+
+this.phone = phone;
+
+}
+
+public String getEmail() {
+
+return email;
+
+}
+
+public void setEmail(String email) {
+
+this.email = email;
+
+}
+
+public String getPermanentAddress() {
+
+return permanentAddress;
+
+}
+
+public void setPermanentAddress(String permanentAddress) {
+
+this.permanentAddress = permanentAddress;
+
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
