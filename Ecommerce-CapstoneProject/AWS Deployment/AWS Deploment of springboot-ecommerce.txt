@@ -1,0 +1,1 @@
+http://springboot-ecommerce.eba-x2thnthf.us-east-1.elasticbeanstalk.com/
